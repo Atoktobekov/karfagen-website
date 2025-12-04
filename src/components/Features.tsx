@@ -1,5 +1,6 @@
 import { Shield, Zap, Users, TrendingUp } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import tableImg from "@/assets/img/table1.png";
 
 export function Features() {
   const features = [
@@ -34,7 +35,7 @@ export function Features() {
             <div className="relative">
               <div className="bg-gradient-to-br from-[#3d4a61] to-[#2F3B50] p-8 rounded-3xl border border-[#C48A52]/20">
                 <ImageWithFallback 
-                  src="https://images.unsplash.com/photo-1713857150028-b21f5c86bbd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbWFydHBob25lJTIwbW9kZXJuJTIwaW50ZXJmYWNlfGVufDF8fHx8MTc2NDc3Njk4MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                  src={tableImg}
                   alt="Modern Interface"
                   className="w-full h-[500px] object-cover rounded-2xl"
                 />

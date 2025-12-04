@@ -1,5 +1,7 @@
 import { ArrowRight, Code2, Layers, Zap } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import phoneImg from "@/assets/img/phone1.png";
+
 
 export function Hero() {
   return (
@@ -54,7 +56,7 @@ export function Hero() {
                   <Code2 className="w-6 h-6 text-[#C48A52]" />
                 </div>
                 <div>
-                  <div className="text-2xl text-white">150+</div>
+                  <div className="text-2xl text-white">10+</div>
                   <div className="text-sm text-white/60">Проектов</div>
                 </div>
               </div>
@@ -64,7 +66,7 @@ export function Hero() {
                   <Layers className="w-6 h-6 text-[#FF9E76]" />
                 </div>
                 <div>
-                  <div className="text-2xl text-white">50+</div>
+                  <div className="text-2xl text-white">5+</div>
                   <div className="text-sm text-white/60">Клиентов</div>
                 </div>
               </div>
@@ -74,7 +76,7 @@ export function Hero() {
                   <Zap className="w-6 h-6 text-[#C48A52]" />
                 </div>
                 <div>
-                  <div className="text-2xl text-white">8+</div>
+                  <div className="text-2xl text-white">3+</div>
                   <div className="text-sm text-white/60">Лет опыта</div>
                 </div>
               </div>
@@ -85,7 +87,7 @@ export function Hero() {
             <div className="absolute inset-0 bg-gradient-to-br from-[#C48A52]/20 to-[#FF9E76]/20 rounded-3xl blur-3xl"></div>
             <div className="relative bg-gradient-to-br from-[#3d4a61] to-[#2F3B50] p-8 rounded-3xl border border-[#C48A52]/20">
               <ImageWithFallback 
-                src="https://images.unsplash.com/photo-1762341119237-98df67c9c3c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXZlbG9wbWVudCUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzY0Nzc2OTgxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src={phoneImg}
                 alt="Mobile Development"
                 className="w-full h-[600px] object-cover rounded-2xl"
               />

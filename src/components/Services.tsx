@@ -1,11 +1,11 @@
-import { Smartphone, TabletSmartphone, AppWindow, Palette, Code, Rocket } from 'lucide-react';
+import { Smartphone, TabletSmartphone, AppWindow, Palette, Rocket, Gamepad } from 'lucide-react';
 
 export function Services() {
   const services = [
     {
       icon: Smartphone,
       title: 'iOS разработка',
-      description: 'Создаем нативные приложения для iPhone и iPad с безупречным пользовательским опытом'
+      description: 'Создаем производительные приложения для iPhone и iPad с безупречным пользовательским опытом'
     },
     {
       icon: TabletSmartphone,
@@ -15,7 +15,7 @@ export function Services() {
     {
       icon: AppWindow,
       title: 'Кроссплатформенные решения',
-      description: 'Используем React Native и Flutter для создания приложений на обеих платформах'
+      description: 'Используем Flutter для создания приложений на обеих платформах'
     },
     {
       icon: Palette,
@@ -23,9 +23,9 @@ export function Services() {
       description: 'Проектируем интуитивные интерфейсы, которые пользователи полюбят с первого взгляда'
     },
     {
-      icon: Code,
-      title: 'Backend разработка',
-      description: 'Строим надежную серверную инфраструктуру для ваших мобильных приложений'
+      icon: Gamepad,
+      title: 'Разработка игр',
+      description: 'Делаем красивые и увлекательные игры на современном движке Unity. '
     },
     {
       icon: Rocket,

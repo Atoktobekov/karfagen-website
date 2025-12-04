@@ -58,10 +58,12 @@ export function Footer() {
             <h4 className="text-white text-lg mb-6">Компания</h4>
             <ul className="space-y-3">
               <li><a href="#" className="text-white/70 hover:text-[#C48A52] transition-colors">О нас</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#C48A52] transition-colors">Команда</a></li>
+              <li><a href="#" className="text-white/70 hover:text-[#C48A52] transition-colors">Вакансии</a></li>
+
+            {/*  <li><a href="#" className="text-white/70 hover:text-[#C48A52] transition-colors">Команда</a></li>
               <li><a href="#" className="text-white/70 hover:text-[#C48A52] transition-colors">Карьера</a></li>
               <li><a href="#" className="text-white/70 hover:text-[#C48A52] transition-colors">Блог</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#C48A52] transition-colors">Контакты</a></li>
+              <li><a href="#" className="text-white/70 hover:text-[#C48A52] transition-colors">Контакты</a></li>*/}
             </ul>
           </div>
           
@@ -71,19 +73,19 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-[#C48A52] flex-shrink-0 mt-1" />
                 <a href="mailto:info@karfagen.dev" className="text-white/70 hover:text-[#C48A52] transition-colors">
-                  info@karfagen.dev
+                  adil_toktobekov@mail.ru
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-[#C48A52] flex-shrink-0 mt-1" />
                 <a href="tel:+74951234567" className="text-white/70 hover:text-[#C48A52] transition-colors">
-                  +7 (495) 123-45-67
+                  +996 776 123 666
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-[#C48A52] flex-shrink-0 mt-1" />
                 <span className="text-white/70">
-                  Москва, Пресненская наб., 12
+                  Бишкек, Байтик баатыра, 86
                 </span>
               </li>
             </ul>
