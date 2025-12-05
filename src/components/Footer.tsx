@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Smartphone, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Smartphone, Github, Linkedin, Instagram } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -28,17 +28,28 @@ export function Footer() {
               <span className="text-2xl text-white tracking-wider">KARFAGEN</span>
             </div>
             <p className="text-white/70 mb-6">
-              Строим цифровые империи с 2016 года. Создаем мобильные приложения, которые изменяют мир.
+              Строим цифровые империи для наших клиентов. Создаем мобильные приложения, которые изменяют мир.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 bg-[#C48A52]/20 rounded-lg flex items-center justify-center hover:bg-[#C48A52]/40 transition-all">
+
+              <a  href="https://github.com/Atoktobekov"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                 className="w-10 h-10 bg-[#C48A52]/20 rounded-lg flex items-center justify-center hover:bg-[#C48A52]/40 transition-all">
                 <Github className="w-5 h-5 text-[#C48A52]" />
               </a>
-              <a href="#" className="w-10 h-10 bg-[#C48A52]/20 rounded-lg flex items-center justify-center hover:bg-[#C48A52]/40 transition-all">
+
+              <a href="https://www.linkedin.com/in/adi-toktobekov/"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="w-10 h-10 bg-[#C48A52]/20 rounded-lg flex items-center justify-center hover:bg-[#C48A52]/40 transition-all">
                 <Linkedin className="w-5 h-5 text-[#C48A52]" />
               </a>
-              <a href="#" className="w-10 h-10 bg-[#C48A52]/20 rounded-lg flex items-center justify-center hover:bg-[#C48A52]/40 transition-all">
-                <Twitter className="w-5 h-5 text-[#C48A52]" />
+              <a href="https://www.instagram.com/adi_toktobekov/"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="w-10 h-10 bg-[#C48A52]/20 rounded-lg flex items-center justify-center hover:bg-[#C48A52]/40 transition-all">
+                <Instagram className="w-5 h-5 text-[#C48A52]" />
               </a>
             </div>
           </div>
