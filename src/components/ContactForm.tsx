@@ -47,12 +47,12 @@ export function ContactForm({ open, onOpenChange }: ContactFormProps) {
               </div>
               Связаться с нами
             </DialogTitle>
-            <button
+          {/*  <button
               onClick={() => onOpenChange(false)}
               className="w-10 h-10 rounded-lg bg-[#2F3B50]/50 hover:bg-[#C48A52]/20 transition-all flex items-center justify-center"
             >
               <X className="w-5 h-5 text-white/70" />
-            </button>
+            </button>*/}
           </div>
           <p className="text-white/70 mt-3">
             Заполните форму и наш менеджер свяжется с вами в течение 24 часов

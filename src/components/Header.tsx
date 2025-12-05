@@ -20,7 +20,9 @@ export function Header() {
             <a href="#features" className="text-white/80 hover:text-[#C48A52] transition-colors">Преимущества</a>
             <a href="#portfolio" className="text-white/80 hover:text-[#C48A52] transition-colors">Портфолио</a>
             <a href="#contact" className="text-white/80 hover:text-[#C48A52] transition-colors">Контакты</a>
-            <button className="px-8 py-3 bg-gradient-to-r from-[#C48A52] to-[#FF9E76] text-white rounded-lg hover:shadow-lg hover:shadow-[#C48A52]/30 transition-all">
+            <button
+                onClick={() => window.dispatchEvent(new CustomEvent('openContactForm'))}
+                className="px-8 py-3 bg-gradient-to-r from-[#C48A52] to-[#FF9E76] text-white rounded-lg hover:shadow-lg hover:shadow-[#C48A52]/30 transition-all">
               Связаться
             </button>
           </nav>
