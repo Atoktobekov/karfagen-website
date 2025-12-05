@@ -28,7 +28,7 @@ karfagen-website/
 ├─ src/  
 │  ├─ components/  # Компоненты сайта (.tsx)  
 │  ├─ pages/       # Страницы сайта  
-│  ├─ assets/      # изображения и другие файлы
+│  ├─ assets/      # изображения и другие файлы  
 │  └─ styles/      # Tailwind и кастомные стили  
 ├─ package.json  
 ├─ tsconfig.json  
