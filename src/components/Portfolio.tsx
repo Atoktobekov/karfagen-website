@@ -1,4 +1,5 @@
 import {ArrowRight, Star} from 'lucide-react';
+import { Link } from 'react-router-dom';
 import {ImageWithFallback} from './figma/ImageWithFallback';
 import manasImg from '@/assets/img/yemekhane.png';
 import cryptoImg from '@/assets/img/crypto.png';
@@ -92,16 +93,18 @@ export function Portfolio() {
                                     Подробнее
                                     <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"/>
                                 </button>
+
                             </div>
                         </div>
                     ))}
                 </div>
 
                 <div className="text-center mt-12">
-                    <button
-                        className="px-12 py-4 bg-gradient-to-r from-[#C48A52] to-[#FF9E76] text-white rounded-lg hover:shadow-xl hover:shadow-[#C48A52]/40 transition-all">
-                        Смотреть все проекты
-                    </button>
+                    <Link to="/projects">
+                        <button className="px-12 py-4 bg-gradient-to-r from-[#C48A52] to-[#FF9E76] text-white rounded-lg hover:shadow-xl hover:shadow-[#C48A52]/40 transition-all">
+                            Смотреть все проекты
+                        </button>
+                    </Link>
                 </div>
             </div>
         </section>

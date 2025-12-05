@@ -1,9 +1,6 @@
-import {Header} from './components/Header';
-import {Hero} from './components/Hero';
-import {Services} from './components/Services';
-import {Features} from './components/Features';
-import {Portfolio} from './components/Portfolio';
-import {Footer} from './components/Footer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HomePage } from './pages/HomePage';
+import { ProjectsPage } from './pages/ProjectsPage';
 import {ContactForm} from './components/ContactForm';
 import {useState, useEffect} from 'react';
 
@@ -17,14 +14,14 @@ export default function App() {
     }, []);
 
     return (
-        <div className="min-h-screen bg-[#2F3B50]">
-            <Header/>
-            <Hero/>
-            <Services/>
-            <Features/>
-            <Portfolio/>
-            <Footer/>
-            <ContactForm open={contactFormOpen} onOpenChange={setContactFormOpen}/>
-        </div>
+        <BrowserRouter>
+            <div className="min-h-screen bg-[#2F3B50]">
+                <Routes>
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/projects" element={<ProjectsPage />} />
+                </Routes>
+                <ContactForm open={contactFormOpen} onOpenChange={setContactFormOpen} />
+            </div>
+        </BrowserRouter>
     );
 }
