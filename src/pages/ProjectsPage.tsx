@@ -2,139 +2,116 @@ import { useState } from 'react';
 import { ArrowLeft, Star, Calendar, Users, ExternalLink } from 'lucide-react';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import { useNavigate } from 'react-router-dom';
+import manasImg from '@/assets/img/yemekhane.png';
+import cryptoImg from '@/assets/img/crypto.png';
+import nowhereImg from '@/assets/img/nowhere.png';
+import blueboundImg from '@/assets/img/bluebound.png';
+import mathBlitzImg from '@/assets/img/mathBlitz.png';
 
+const categoryAll = "Все";
+const categoryFinances = "Финансы";
+const categoryHealth = "Здоровье";
+const categoryEducation = "Образование";
+const categoryProductivity = "Продуктивность";
+const categoryGames = "Игры";
+const categoryFood = "Еда";
 export function ProjectsPage() {
     const navigate = useNavigate();
     const [activeCategory, setActiveCategory] = useState('Все');
 
-    const categories = ['Все', 'Финансы', 'Здоровье', 'Образование', 'E-commerce', 'Доставка', 'Социальные'];
+    const categories = [categoryAll, categoryFinances, categoryHealth, categoryEducation, categoryProductivity, categoryGames, categoryFood];
 
     const projects = [
         {
             id: 1,
-            title: 'FinTech Pro',
-            category: 'Финансы',
-            description: 'Мобильное приложение для управления финансами с AI-советником и автоматической категоризацией расходов',
-            fullDescription: 'Комплексное решение для личных финансов с машинным обучением, анализом трат и инвестиционными рекомендациями',
+            title: 'Manas Yemekhane',
+            category: categoryFood,
+            description: 'Мобильное приложение для быстрого просмотра меню в столовой университета Манас',
+            fullDescription: 'Приложение, дающее быстрый и удобный доступ к актуальному меню в столовой. В будущем планируется добавление рейтинга блюд и страницы для каждого блюда',
             rating: 4.8,
             downloads: '100K+',
-            year: '2024',
-            team: '8 человек',
-            duration: '6 месяцев',
-            image: 'https://images.unsplash.com/photo-1644088379091-d574269d422f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMHRlY2hub2xvZ3klMjBuZXR3b3JrfGVufDF8fHx8MTc2NDc0NDIxMXww&ixlib=rb-4.1.0&q=80&w=1080',
-            technologies: ['React Native', 'Node.js', 'TensorFlow', 'PostgreSQL']
+            year: '2025',
+            team: '1 человек',
+            duration: '3 недели',
+            image: manasImg,
+            technologies: ['Flutter', 'Dart', 'Provider', 'Hive_ce']
         },
         {
             id: 2,
-            title: 'HealthTracker',
-            category: 'Здоровье',
-            description: 'Комплексное приложение для мониторинга здоровья и фитнеса с интеграцией носимых устройств',
-            fullDescription: 'Персональный помощник здоровья с трекингом активности, питания, сна и медицинских показателей',
+            title: 'CryptoApp',
+            category: categoryFinances,
+            description: 'Приложение для мониторинга курсов криптовалют',
+            fullDescription: 'Приложение, показывающее самые актуальные цены на криптовалюты. Есть локальное сохранение данных и работа без интернета',
             rating: 4.9,
             downloads: '250K+',
-            year: '2024',
-            team: '10 человек',
-            duration: '8 месяцев',
-            image: 'https://images.unsplash.com/photo-1661246627162-feb0269e0c07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2UlMjBkZXNpZ258ZW58MXx8fHwxNzY0ODY3ODI0fDA&ixlib=rb-4.1.0&q=80&w=1080',
-            technologies: ['Flutter', 'Firebase', 'HealthKit', 'Google Fit']
+            year: '2025',
+            team: '2 человека',
+            duration: '1.5 месяца',
+            image: cryptoImg,
+            technologies: ['Flutter', 'Firebase', 'Hive_ce', 'Dart']
         },
         {
             id: 3,
-            title: 'EduSpace',
-            category: 'Образование',
-            description: 'Платформа для онлайн-обучения с интерактивными курсами и геймификацией',
-            fullDescription: 'Образовательная платформа с видеокурсами, тестами, сертификатами и системой достижений',
+            title: 'NowhereAwake',
+            category: categoryGames,
+            description: '2D игра в жанре платформер с загадочным сюжетом и авторской графикой',
+            fullDescription: 'Игра, сделанная командой Karfagen Games во время Ala-Too Gamejam 2025. Была сделана за 48 часов и принесла команде победу. Используется полностью авторская графика и скрипты',
             rating: 4.7,
             downloads: '500K+',
-            year: '2023',
-            team: '12 человек',
-            duration: '10 месяцев',
-            image: 'https://images.unsplash.com/photo-1762341119237-98df67c9c3c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXZlbG9wbWVudCUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzY0Nzc2OTgxfDA&ixlib=rb-4.1.0&q=80&w=1080',
-            technologies: ['React Native', 'AWS', 'GraphQL', 'MongoDB']
+            year: '2025',
+            team: '3 человека',
+            duration: '48 часов',
+            image: nowhereImg,
+            technologies: ['Unity', 'C#', 'Aseprite', 'Photoshop']
         },
         {
             id: 4,
-            title: 'ShopMate',
-            category: 'E-commerce',
-            description: 'Современное приложение для онлайн-шопинга с AR-примеркой и персонализированными рекомендациями',
-            fullDescription: 'Инновационный e-commerce с дополненной реальностью, AI-стилистом и удобной системой оплаты',
+            title: 'BlueBound',
+            category: categoryGames,
+            description: 'Увлекательный 2D платформер на Unity с авторскими механиками',
+            fullDescription: 'Первый мой полноценный проект. Сделан совсем ещё неопытным мной как практический проект на втором курсе учебы',
             rating: 4.6,
             downloads: '300K+',
-            year: '2024',
-            team: '9 человек',
-            duration: '7 месяцев',
-            image: 'https://images.unsplash.com/photo-1723705027411-9bfc3c99c2e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjBzaG9wcGluZyUyMGFwcHxlbnwxfHx8fDE3NjQ5MDk1OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080',
-            technologies: ['Swift', 'Kotlin', 'ARKit', 'Stripe']
+            year: '2025',
+            team: '1 человек',
+            duration: '2 месяцев',
+            image: blueboundImg,
+            technologies: ['Unity', 'Photoshop', 'Git', 'C#']
         },
         {
             id: 5,
-            title: 'QuickFood',
-            category: 'Доставка',
-            description: 'Приложение для доставки еды с отслеживанием заказа в реальном времени',
-            fullDescription: 'Сервис доставки еды с большим выбором ресторанов, быстрой доставкой и программой лояльности',
-            rating: 4.5,
+            title: 'MathBlitz',
+            category: categoryGames,
+            description: 'Супер простая игра для развития ментальной арифметики',
+            fullDescription: 'Игра в быстром темпе на вычисление ответа выражения. Выражение всегда составляется из цифр 1, 2 и 3, также как и ответ являетя одним их этих цифр',
+            rating: 4.9,
             downloads: '450K+',
-            year: '2023',
-            team: '11 человек',
-            duration: '9 месяцев',
-            image: 'https://images.unsplash.com/photo-1729860649884-40ec104f9dfd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb29kJTIwZGVsaXZlcnklMjBhcHB8ZW58MXx8fHwxNzY0ODYyMDQ1fDA&ixlib=rb-4.1.0&q=80&w=1080',
-            technologies: ['React Native', 'Node.js', 'Socket.io', 'Maps API']
+            year: '2024',
+            team: '1 человек',
+            duration: '2 недели',
+            image: mathBlitzImg,
+            technologies: ['Flutter', 'Dart', 'Git']
         },
         {
             id: 6,
-            title: 'ConnectHub',
-            category: 'Социальные',
-            description: 'Социальная сеть для профессионалов с нетворкингом и поиском работы',
-            fullDescription: 'Платформа для профессионального общения, обмена опытом и карьерного роста',
-            rating: 4.4,
-            downloads: '200K+',
-            year: '2024',
-            team: '15 человек',
-            duration: '12 месяцев',
+            title: 'Rita',
+            category: categoryProductivity,
+            description: 'Простое и полезное приложение для ежедневного планирования и саморазвития. В разработке',
+            fullDescription: '📅 Каждый день — это карточка со списком дел\n' +
+                '🔔 Вечером (21:00–22:00) приходит напоминание заполнить задачи\n' +
+                '🌙 После полуночи карточка архивируется (остается доступной)\n' +
+                '📊 Статистика:\n' +
+                'Всего задач\n' +
+                'Выполненные задачи\n' +
+                'Процент выполнения\n' +
+                '🏆 Система достижений (ачивки) за прогресс и активность',
+            rating: 0.0,
+            downloads: '_',
+            year: '2025',
+            team: '1 человек',
+            duration: 'В разработке',
             image: 'https://images.unsplash.com/photo-1644088379091-d574269d422f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMHRlY2hub2xvZ3klMjBuZXR3b3JrfGVufDF8fHx8MTc2NDc0NDIxMXww&ixlib=rb-4.1.0&q=80&w=1080',
-            technologies: ['Flutter', 'Django', 'Redis', 'WebRTC']
-        },
-        {
-            id: 7,
-            title: 'TravelMate',
-            category: 'Путешествия',
-            description: 'Приложение для планирования путешествий с бронированием и маршрутами',
-            fullDescription: 'Полный сервис для путешественников: билеты, отели, экскурсии и персональные маршруты',
-            rating: 4.7,
-            downloads: '180K+',
-            year: '2023',
-            team: '7 человек',
-            duration: '8 месяцев',
-            image: 'https://images.unsplash.com/photo-1661246627162-feb0269e0c07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2UlMjBkZXNpZ258ZW58MXx8fHwxNzY0ODY3ODI0fDA&ixlib=rb-4.1.0&q=80&w=1080',
-            technologies: ['React Native', 'Express', 'Amadeus API', 'Mapbox']
-        },
-        {
-            id: 8,
-            title: 'CryptoWallet',
-            category: 'Финансы',
-            description: 'Безопасный кошелек для криптовалют с биржевой торговлей',
-            fullDescription: 'Мультивалютный крипто-кошелек с обменом, стейкингом и DeFi интеграцией',
-            rating: 4.6,
-            downloads: '150K+',
-            year: '2024',
-            team: '10 человек',
-            duration: '9 месяцев',
-            image: 'https://images.unsplash.com/photo-1762341119237-98df67c9c3c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXZlbG9wbWVudCUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzY0Nzc2OTgxfDA&ixlib=rb-4.1.0&q=80&w=1080',
-            technologies: ['Swift', 'Kotlin', 'Blockchain', 'Web3.js']
-        },
-        {
-            id: 9,
-            title: 'MindfulMe',
-            category: 'Здоровье',
-            description: 'Приложение для медитации и ментального здоровья',
-            fullDescription: 'Персональный коуч по медитации с программами снижения стресса и улучшения сна',
-            rating: 4.8,
-            downloads: '220K+',
-            year: '2023',
-            team: '6 человек',
-            duration: '5 месяцев',
-            image: 'https://images.unsplash.com/photo-1644088379091-d574269d422f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMHRlY2hub2xvZ3klMjBuZXR3b3JrfGVufDF8fHx8MTc2NDc0NDIxMXww&ixlib=rb-4.1.0&q=80&w=1080',
-            technologies: ['Flutter', 'Firebase', 'Audio SDK', 'ML Kit']
+            technologies: ['Flutter', 'Provider', 'Git', 'Hive_ce'],
         }
     ];
 
@@ -206,7 +183,7 @@ export function ProjectsPage() {
             {/* Projects Grid */}
             <section className="pb-32">
                 <div className="max-w-[1920px] mx-auto px-20">
-                    <div className="grid grid-cols-3 gap-8">
+                    <div className="grid grid-cols-3 gap-8"> {/*это карточки проектов*/}
                         {filteredProjects.map((project, index) => (
                             <div
                                 key={project.id}
@@ -281,7 +258,7 @@ export function ProjectsPage() {
                                 </div>
                             </div>
                         ))}
-                    </div>
+                    </div> {/*конец карточки проектов*/}
 
                     {filteredProjects.length === 0 && (
                         <div className="text-center py-20">
