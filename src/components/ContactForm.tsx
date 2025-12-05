@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import { X, Send, User, Phone, MessageSquare, Mail } from 'lucide-react';
+/*import { X, Send, User, Phone, MessageSquare, Mail } from 'lucide-react';*/
+import { Send, User, Phone, MessageSquare, Mail } from 'lucide-react';
+
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from './ui/dialog';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
