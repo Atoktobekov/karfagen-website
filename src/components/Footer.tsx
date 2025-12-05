@@ -1,6 +1,8 @@
 import { Mail, Phone, MapPin, Smartphone, Github, Linkedin, Instagram } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 export function Footer() {
+    const navigate = useNavigate();
   return (
     <footer id="contact" className="relative bg-[#252f42] pt-20 pb-8">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C48A52] to-transparent"></div>
@@ -68,7 +70,7 @@ export function Footer() {
           <div>
             <h4 className="text-white text-lg mb-6">Компания</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-white/70 hover:text-[#C48A52] transition-colors">О нас</a></li>
+               <li><button onClick={() => navigate('/about')} className="text-white/70 hover:text-[#C48A52] transition-colors">О нас</button></li>
               <li><a href="#" className="text-white/70 hover:text-[#C48A52] transition-colors">Вакансии</a></li>
 
             {/*  <li><a href="#" className="text-white/70 hover:text-[#C48A52] transition-colors">Команда</a></li>
