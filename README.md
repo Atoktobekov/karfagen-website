@@ -1,73 +1,51 @@
-# React + TypeScript + Vite
+# Karfagen Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Karfagen Logo](src/assets/img/karfagen_logo_experimental.png) <!-- если есть логотип -->
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📱 Описание / Description
 
-## React Compiler
+**Русский:**  
+Сайт для компании **Karfagen**, собранный на базе макета из Figma AI, который сразу предоставил готовые `.tsx` компоненты и стили. Дальнейшая разработка ведется с использованием **React**, **Vite** и **Tailwind CSS**, с постепенной адаптацией под нужды проекта.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**English:**  
+Website for the company **Karfagen**, built from a Figma AI design that provided ready-made `.tsx` components and styles. The project is developed using **React**, **Vite**, and **Tailwind CSS**, gradually customized to fit the project’s needs.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧩 Стек / Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **React** — фронтенд-библиотека
+- **Vite** — сборщик и дев-сервер
+- **Tailwind CSS** — CSS-фреймворк для стилизации
+- **TypeScript** — типизация и повышение надежности кода
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
+## 📁 Структура проекта / Project Structure
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+karfagen-website/  
+├─ src/  
+│  ├─ components/  # Компоненты сайта (.tsx)  
+│  ├─ pages/       # Страницы сайта  
+│  ├─ assets/      # изображения и другие файлы
+│  └─ styles/      # Tailwind и кастомные стили  
+├─ package.json  
+├─ tsconfig.json  
+└─ vite.config.ts  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+--- 
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 👨‍💻 Контрибьютинг / Contributing
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**Русский**:
+Если хочешь помочь улучшить сайт — создавай форк, делай изменения и отправляй Pull Request. Любые идеи по дизайну или функционалу приветствуются.
+
+**English**:
+If you want to help improve the website — fork the repo, make changes, and submit a Pull Request. Any ideas for design or functionality are welcome.
+
+--- 
+
+## 📜 Лицензия / License
+
+Apache 2.0 License  © [Atoktobekov](https://github.com/Atoktobekov)  
