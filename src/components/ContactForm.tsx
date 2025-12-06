@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { X, Send, User, Phone, MessageSquare, Mail } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from './ui/dialog';
 import { Input } from './ui/input';
@@ -22,22 +23,38 @@ export function ContactForm({ open, onOpenChange }: ContactFormProps) {
   
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Здесь будет логика отправки формы
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    console.log('Form data:', formData);
-    alert('Спасибо за обращение! Мы свяжемся с вами в ближайшее время.');
-    
-    setFormData({ name: '', phone: '', subject: '', message: '' });
-    setIsSubmitting(false);
-    onOpenChange(false);
-  };
 
-  return (
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+
+        try {
+            await emailjs.send(
+                'service_sm9wis3',
+                'template_9wkg7uk',
+                {
+                    user_name: formData.name,
+                    user_phone: formData.phone,
+                    user_subject: formData.subject,
+                    user_message: formData.message,
+                },
+                'E03nQJM-eKxUUa57O'
+            );
+
+            alert('Спасибо за обращение! Мы свяжемся с вами в ближайшее время.');
+
+            setFormData({ name: '', phone: '', subject: '', message: '' });
+            onOpenChange(false);
+        } catch (error) {
+            console.error(error);
+            alert('Произошла ошибка при отправке, попробуйте позже.');
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+
+
+    return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-2xl bg-gradient-to-br from-[#3d4a61] to-[#2F3B50] border-2 border-[#C48A52]/30 text-white p-0 gap-0">
         <DialogHeader className="p-8 pb-6 border-b border-[#C48A52]/20">
