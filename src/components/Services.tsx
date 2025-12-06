@@ -1,4 +1,5 @@
 import { Smartphone, TabletSmartphone, AppWindow, Palette, Rocket, Gamepad } from 'lucide-react';
+import {Link} from "react-router-dom";
 
 export function Services() {
   const services = [
@@ -75,7 +76,16 @@ export function Services() {
             );
           })}
         </div>
+
       </div>
+
+        <div className="text-center mt-12">
+            <Link to="/services">
+                <button className="px-12 py-4 bg-gradient-to-r from-[#C48A52] to-[#FF9E76] text-white rounded-lg hover:shadow-xl hover:shadow-[#C48A52]/40 transition-all">
+                    Узнать больше про услуги
+                </button>
+            </Link>
+        </div>
     </section>
   );
 }
