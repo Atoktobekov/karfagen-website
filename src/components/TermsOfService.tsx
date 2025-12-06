@@ -329,9 +329,9 @@ export function TermsOfServiceContent() {
         <div className="bg-gradient-to-br from-[#3d4a61] to-[#2F3B50] p-6 rounded-xl border border-[#C48A52]/30">
           <div className="space-y-3 text-white/80">
             <p><strong className="text-[#C48A52]">Компания:</strong> Karfagen</p>
-            <p><strong className="text-[#C48A52]">Email:</strong> legal@karfagen.com</p>
-            <p><strong className="text-[#C48A52]">Телефон:</strong> +7 (495) 123-45-67</p>
-            <p><strong className="text-[#C48A52]">Адрес:</strong> Москва, Россия</p>
+            <p><strong className="text-[#C48A52]">Email:</strong> adil_toktobekov@mail.ru</p>
+            <p><strong className="text-[#C48A52]">Телефон:</strong> +996 776 123 666</p>
+            <p><strong className="text-[#C48A52]">Адрес:</strong> Бишкек, Кыргызстан</p>
           </div>
         </div>
       </section>
