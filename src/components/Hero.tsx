@@ -1,6 +1,7 @@
 import {ArrowRight, Code2, Layers, Zap} from 'lucide-react';
 import {ImageWithFallback} from './figma/ImageWithFallback';
 import phoneImg from "@/assets/img/phone1.png";
+import { Link } from 'react-router-dom';
 
 
 export function Hero() {
@@ -49,10 +50,12 @@ export function Hero() {
                                 Начать проект
                                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform"/>
                             </button>
+                            <Link to="/projects">
                             <button
                                 className="px-10 py-4 border-2 border-[#C48A52] text-[#C48A52] rounded-lg hover:bg-[#C48A52]/10 transition-all">
                                 Наши работы
                             </button>
+                            </Link>
                         </div>
 
                         <div className="flex gap-12 mt-16">
