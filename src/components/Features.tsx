@@ -1,6 +1,7 @@
 import { Shield, Zap, Users, TrendingUp } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import tableImg from "@/assets/img/table1.png";
+import {Link} from "react-router-dom";
 
 export function Features() {
   const features = [
@@ -84,6 +85,13 @@ export function Features() {
           </div>
         </div>
       </div>
+        <div className="text-center mt-12">
+            <Link to="/about">
+                <button className="px-12 py-4 bg-gradient-to-r from-[#C48A52] to-[#FF9E76] text-white rounded-lg hover:shadow-xl hover:shadow-[#C48A52]/40 transition-all">
+                    Подробнее о нас
+                </button>
+            </Link>
+        </div>
     </section>
   );
 }

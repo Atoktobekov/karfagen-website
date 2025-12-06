@@ -57,9 +57,9 @@ export function AboutPage() {
 
   const stats = [
     { value: '8+', label: 'Лет на рынке', icon: TrendingUp },
-    { value: '150+', label: 'Завершенных проектов', icon: Award },
+    { value: '60+', label: 'Завершенных проектов', icon: Award },
     { value: '50+', label: 'Довольных клиентов', icon: Users },
-    { value: '30+', label: 'Специалистов в команде', icon: Code2 }
+    { value: '10+', label: 'Специалистов в команде', icon: Code2 }
   ];
 
   const milestones = [
