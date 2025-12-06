@@ -1,9 +1,17 @@
 import { Mail, Phone, MapPin, Smartphone, Github, Linkedin, Instagram } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import { LegalModal } from './LegalModal';
+import { PrivacyPolicyContent } from './PrivacyPolicy';
+import { TermsOfServiceContent } from './TermsOfService';
 
 export function Footer() {
     const navigate = useNavigate();
+    const [privacyOpen, setPrivacyOpen] = useState(false);
+    const [termsOpen, setTermsOpen] = useState(false);
+
   return (
+      <>
     <footer id="contact" className="relative bg-[#252f42] pt-20 pb-8">
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C48A52] to-transparent"></div>
       
@@ -110,13 +118,42 @@ export function Footer() {
             <p className="text-white/60">
               © 2025 Karfagen. Все права защищены.
             </p>
-            <div className="flex gap-8">
-              <a href="#" className="text-white/60 hover:text-[#C48A52] transition-colors">Политика конфиденциальности</a>
-              <a href="#" className="text-white/60 hover:text-[#C48A52] transition-colors">Условия использования</a>
-            </div>
+              <div className="flex gap-8">
+                  <button
+                      onClick={() => setPrivacyOpen(true)}
+                      className="text-white/60 hover:text-[#C48A52] transition-colors"
+                  >
+                      Политика конфиденциальности
+                  </button>
+                  <button
+                      onClick={() => setTermsOpen(true)}
+                      className="text-white/60 hover:text-[#C48A52] transition-colors"
+                  >
+                      Условия использования
+                  </button>
+              </div>
           </div>
         </div>
       </div>
     </footer>
+
+          {/* Legal Modals */}
+          <LegalModal
+              open={privacyOpen}
+              onOpenChange={setPrivacyOpen}
+              title="Политика конфиденциальности"
+          >
+              <PrivacyPolicyContent />
+          </LegalModal>
+
+          <LegalModal
+              open={termsOpen}
+              onOpenChange={setTermsOpen}
+              title="Условия использования"
+          >
+              <TermsOfServiceContent />
+          </LegalModal>
+
+      </>
   );
 }
