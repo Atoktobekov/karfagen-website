@@ -61,7 +61,7 @@ export function Hero() {
                                     <Code2 className="w-6 h-6 text-[#C48A52]"/>
                                 </div>
                                 <div>
-                                    <div className="text-2xl text-white">10+</div>
+                                    <div className="text-2xl text-white">60+</div>
                                     <div className="text-sm text-white/60">Проектов</div>
                                 </div>
                             </div>
@@ -71,7 +71,7 @@ export function Hero() {
                                     <Layers className="w-6 h-6 text-[#FF9E76]"/>
                                 </div>
                                 <div>
-                                    <div className="text-2xl text-white">20+</div>
+                                    <div className="text-2xl text-white">50+</div>
                                     <div className="text-sm text-white/60">Клиентов</div>
                                 </div>
                             </div>
@@ -81,7 +81,7 @@ export function Hero() {
                                     <Zap className="w-6 h-6 text-[#C48A52]"/>
                                 </div>
                                 <div>
-                                    <div className="text-2xl text-white">3+</div>
+                                    <div className="text-2xl text-white">8+</div>
                                     <div className="text-sm text-white/60">Лет опыта</div>
                                 </div>
                             </div>

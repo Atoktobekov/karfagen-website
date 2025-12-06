@@ -69,7 +69,7 @@ export function Portfolio() {
 
                                 <div className="absolute inset-0 bg-gradient-to-t from-[#2F3B50] to-transparent"></div>
 
-                                {/* Category badge */}
+                                 Category badge
                                 <div
                                     className="absolute top-4 left-4 px-4 py-2 bg-[#C48A52]/90 backdrop-blur-sm rounded-lg">
                                     <span className="text-white text-sm">{project.category}</span>
