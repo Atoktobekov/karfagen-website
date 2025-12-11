@@ -251,7 +251,9 @@ export function ProjectsPage() {
                                         </div>
                                     </div>
 
-                                    <button className="group/btn w-full py-3 border-2 border-[#C48A52] text-[#C48A52] rounded-lg hover:bg-[#C48A52] hover:text-white transition-all flex items-center justify-center gap-2">
+                                    <button className="group/btn w-full py-3 border-2 border-[#C48A52] text-[#C48A52] rounded-lg hover:bg-[#C48A52] hover:text-white transition-all flex items-center justify-center gap-2"
+                                            onClick={() => navigate(`/projects/${project.id}`)}
+                                    >
                                         Подробнее
                                         <ExternalLink className="w-4 h-4 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
                                     </button>
