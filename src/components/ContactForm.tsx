@@ -103,7 +103,7 @@ export function ContactForm({ open, onOpenChange }: ContactFormProps) {
               <Input
                 id="phone"
                 type="tel"
-                placeholder="+7 (999) 123-45-67"
+                placeholder="+996 501 234 567"
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                 required
