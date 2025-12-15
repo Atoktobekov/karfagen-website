@@ -2,6 +2,7 @@ import { ArrowLeft, Star, Calendar, Users, Download, CheckCircle2, TrendingUp, T
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import { useNavigate, useParams } from 'react-router-dom';
 import manasImg from '@/assets/img/yemekhane_leather.png';
+import askaImg from '@/assets/img/aska_yemekhane.png';
 
 // Данные проектов (в реальном приложении это должно быть из API или глобального стейта)
 const projectsData = [
@@ -16,7 +17,7 @@ const projectsData = [
     year: '2025',
     team: '1 человек',
     duration: '3 недели',
-    image: 'https://videos.openai.com/az/vg-assets/task_01kc66v0c5fbg86m6we4hbgy9v%2F1765440209_img_0.webp?se=2025-12-14T00%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&skoid=5e5fc900-07cf-43e7-ab5b-314c0d877bb0&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-12-11T01%3A08%3A21Z&ske=2025-12-18T01%3A13%3A21Z&sks=b&skv=2024-08-04&sig=JKJb/fU9dY62ily4zFQRFmyRn3odjYf1fAlAKrQCjDk%3D&ac=oaivgprodscus2',
+    image: askaImg,
     technologies: ['Flutter', 'Dart', 'Firebase', 'Hive_ce', 'Node.js'],
     client: 'Университет Манас',
     challenge: 'Создать интуитивное приложение для быстрого и простого доступа к меню без необходимости запускать браузер и переходить на сайт.',

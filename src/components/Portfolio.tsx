@@ -1,11 +1,13 @@
-import {ArrowRight, Star} from 'lucide-react';
+import { ExternalLink, Star} from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import {ImageWithFallback} from './figma/ImageWithFallback';
 import manasImg from '@/assets/img/yemekhane.png';
 import cryptoImg from '@/assets/img/crypto.png';
 import nowhereImg from '@/assets/img/nowhere.png';
 
 export function Portfolio() {
+    const navigate = useNavigate();
     const projects = [
         {
             title: 'Manas Yemekhane',
@@ -89,9 +91,10 @@ export function Portfolio() {
                                 </div>
 
                                 <button
-                                    className="group/btn w-full py-3 border-2 border-[#C48A52] text-[#C48A52] rounded-lg hover:bg-[#C48A52] hover:text-white transition-all flex items-center justify-center gap-2">
+                                    className="group/btn w-full py-3 border-2 border-[#C48A52] text-[#C48A52] rounded-lg hover:bg-[#C48A52] hover:text-white transition-all flex items-center justify-center gap-2"
+                                    onClick={() => navigate(`/projects/${1}`)}>
                                     Подробнее
-                                    <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform"/>
+                                    <ExternalLink className="w-4 h-4 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
                                 </button>
 
                             </div>
