@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Smartphone, Github, Linkedin, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin, Smartphone, Github, Instagram, Send } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { LegalModal } from './LegalModal';
@@ -49,11 +49,11 @@ export function Footer() {
                 <Github className="w-5 h-5 text-[#C48A52]" />
               </a>
 
-              <a href="https://www.linkedin.com/in/adi-toktobekov/"
+              <a href="https://t.me/KarfagenDev"
                  target="_blank"
                  rel="noopener noreferrer"
                  className="w-10 h-10 bg-[#C48A52]/20 rounded-lg flex items-center justify-center hover:bg-[#C48A52]/40 transition-all">
-                <Linkedin className="w-5 h-5 text-[#C48A52]" />
+                <Send className="w-5 h-5 text-[#C48A52]" />
               </a>
               <a href="https://www.instagram.com/adi_toktobekov/"
                  target="_blank"
